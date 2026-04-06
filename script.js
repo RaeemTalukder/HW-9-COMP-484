@@ -36,10 +36,12 @@ document.getElementById('numberConversionOutput').innerHTML =
 
 
 let population = 1234567890;
+let populationInExponential = population.toExponential(2);
 let formattedPopulation = population.toLocaleString();
 
 document.getElementById('mathOutput').textContent = 
-"Population: " + formattedPopulation;
+"Population: " + formattedPopulation + "<br>" +
+"Population in exponential notation: " + populationInExponential;
 
 function RPS() {
     let choice = document.getElementById('ConditionalInput').value
