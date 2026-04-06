@@ -1,4 +1,5 @@
-Objects/ method list
+Objects/ method list:
+
 Date()
 getFullYear()
 getMonth()
@@ -14,4 +15,8 @@ toLocaleString()
 document.getElementById()
 textContent
 innerHTML
+
+page link:
+
+https://raeemtalukder.github.io/HW-9-COMP-484/
 
