@@ -37,13 +37,17 @@ document.getElementById('numberConversionOutput').innerHTML =
 "value3: " + value3 + " | converted: " + convwertedValue3 + " | isNaN: " + isNa3 + " | isInt: " + isInt3 + "<br>" +
 "value4: " + value4 + " | converted: " + convwertedValue4 + " | isNaN: " + isNa4 + " | isInt: " + isInt4;
 
-//locale string to display them with commas, to expolenetial to display with ^2 exponential notation
+//locale string to display them with commas, to expolenetial to display with ^2 exponential notation, also multiply population increase by 2
 let population = 1234567890;
+let populationincrease = 1234567890 * 2
 let populationInExponential = population.toExponential(2);
-let formattedPopulation = population.toLocaleString();
-//Display
-document.getElementById('mathOutput').textContent = 
-"Population: " + formattedPopulation + "<br>" + " Population in exponential notation: " + populationInExponential;
+let formattedPopulation = populationincrease.toLocaleString();
+//display
+document.getElementById('mathOutput').innerHTML = 
+"Population: " + population + '<br>' +
+"Population in exponential notation: " + populationInExponential + '<br>' +
+"Population increase: " + populationincrease + '<br>' +
+"Formatted population increase: " + formattedPopulation;
 
 function RPS() {
     //get user input
