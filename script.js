@@ -40,8 +40,7 @@ let populationInExponential = population.toExponential(2);
 let formattedPopulation = population.toLocaleString();
 
 document.getElementById('mathOutput').textContent = 
-"Population: " + formattedPopulation + "<br>" +
-"Population in exponential notation: " + populationInExponential;
+"Population: " + formattedPopulation + " Population in exponential notation: " + populationInExponential;
 
 function RPS() {
     let choice = document.getElementById('ConditionalInput').value
